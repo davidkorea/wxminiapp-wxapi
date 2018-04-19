@@ -8,6 +8,30 @@ Page({
   
   },
 
+  login:function(){
+
+    wx.login({
+      success: function(res) {
+        console.log(res.code)
+      },
+      
+    })
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /**
    * 生命周期函数--监听页面加载
    */

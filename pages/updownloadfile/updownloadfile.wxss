@@ -1,12 +1,4 @@
 
-.upload{
-  margin: 20rpx;
-}
-
-.download{
-  margin: 20rpx;  
-}
-
 .image{
   display: flex;
   justify-content: center;

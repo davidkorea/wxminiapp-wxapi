@@ -1,2 +1,4 @@
-<!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view>
+  <button bindtap='login' class='btn' plain='true' type='primary'>login↑</button>
+    
+</view>
