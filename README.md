@@ -17,3 +17,16 @@
 * 存储与CDN服务-Storage
 
     * file that has been uploaded is saved here
+
+# Issue 2 - 40013 invalid appid
+
+ The params in url should be covered by "" instead of '', even thought the vars could be declared by ''.
+ 
+ ```php
+$code = $_GET['code'];
+$appid = 'wx------2ad';
+$appsecret ='9----------------9d';
+
+//params covered by '' could not be resolved!!!!!!!!!!
+$api = "https://api.weixin.qq.com/sns/jscode2session?appid={$appid}&secret={$appsecret}&js_code={$code}&grant_type=authorization_code";
+ ```
