@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/updownloadfile/updownloadfile",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/kefu/kefu"
   ],
   "window": {
     "navigationBarBackgroundColor": "#1296db",
@@ -25,6 +26,12 @@
         "text": "login",
         "iconPath": "icon/login.png",
         "selectedIconPath": "icon/login-a.png"
+      },
+      {
+        "pagePath": "pages/kefu/kefu",
+        "text": "客服",
+        "iconPath": "icon/kefu.png",
+        "selectedIconPath": "icon/kefu-a.png"
       }
     ]
   }
