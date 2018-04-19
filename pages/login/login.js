@@ -12,7 +12,20 @@ Page({
 
     wx.login({
       success: function(res) {
-        console.log(res.code)
+        console.log(res.code);
+        wx.request({
+          url: 'https://davidkorea.applinzi.com/logincode.php',
+          data: {
+            code:res.code
+          },
+          header: {
+            'content-type':'application/json'
+          },
+          success: function(res) {
+            console.log(res.data)
+          },
+            
+        })
       },
       
     })
