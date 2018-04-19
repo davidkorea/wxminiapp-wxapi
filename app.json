@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/updownloadfile/updownloadfile",
+    "pages/login/login"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Wechat Api",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/updownloadfile/updownloadfile",
+        "text": "up/download",
+        "iconPath": "icon/change.png",
+        "selectedIconPath": "icon/change-a.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "login",
+        "iconPath": "icon/login.png",
+        "selectedIconPath": "icon/login-a.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+<view>
+  <button bindtap='upload' class='upload' plain='true' type='primary'>Upload ↑</button>
+  <button bindtap='download' class='download' plain='true' type='warn'>Download ↓</button>
+
+  <view class='image'>
+    <image src='{{image}}' class='img'></image>
+  </view>
+    
+</view>
