@@ -1,5 +1,6 @@
-<contact-button>
+<!-- <contact-button type='default-dark' size='2000' style='margin:100rpx'>
+</contact-button> -->
 
-</contact-button>
+<button open-type="contact" session-from='weapp'>进入客服会话</button>
 
 
