@@ -7,7 +7,7 @@ $wechatObj->responseMsg();
 
 class wechatCallbackapiTest
 {
-    public function valid()
+public function valid()
     {
         $echoStr = $_GET["echostr"];
 
@@ -31,7 +31,7 @@ class wechatCallbackapiTest
         {
             libxml_disable_entity_loader(true);
             $postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);
-            $openid = trim($postObj->FromUserName);
+            $openid = trim($postObj->FromUserName);  //trim必要！！！
             $content = trim($postObj->Content);
 
             $appid = 'wxaeffebcfe95ba2ad';
@@ -87,7 +87,7 @@ class wechatCallbackapiTest
         //     {
         //         echo "Input something...";
         //     }
-        // }
+        }  //失误注释掉，导致if-else结构错误
         else
         {
             echo "";
@@ -108,7 +108,7 @@ class wechatCallbackapiTest
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $temInfo = curl_exec($ch);
         if (curl_errno($ch)) {
-            return curl_error($ch)
+            return curl_error($ch);  //分号不能少
         }
         curl_close($ch);
         return $temInfo;
