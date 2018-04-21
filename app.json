@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/templatemsg/templatemsg",
     "pages/updownloadfile/updownloadfile",
     "pages/login/login",
     "pages/kefu/kefu"
@@ -32,6 +33,12 @@
         "text": "客服",
         "iconPath": "icon/kefu.png",
         "selectedIconPath": "icon/kefu-a.png"
+      },
+      {
+        "pagePath": "pages/templatemsg/templatemsg",
+        "text": "模板消息",
+        "iconPath": "icon/template.png",
+        "selectedIconPath": "icon/template-a.png"
       }
     ]
   }

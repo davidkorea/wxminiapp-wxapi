@@ -22,7 +22,9 @@ Page({
             'content-type':'application/json'
           },
           success: function(res) {
+            // var data = res.data;
             console.log(res.data)
+            // console.log(data.session_key)
           },
             
         })

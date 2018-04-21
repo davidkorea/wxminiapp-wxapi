@@ -1,10 +1,31 @@
 App({
 
-  /**
-   * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
-   */
+  openid:null,
   onLaunch: function () {
-    
+    var that = this;
+    wx.login({
+      success: function (res) {
+        // console.log(res.code);
+        wx.request({
+          url: 'https://davidkorea.applinzi.com/logincode.php',
+          data: {
+            code: res.code
+          },
+          header: {
+            'content-type': 'application/json'
+          },
+          success: function (res) {
+            var data = res.data;
+            var openid = data.openid;
+            that.openid = openid;
+            console.log(openid)
+          },
+
+        })
+      },
+
+    })
+
   },
 
   /**

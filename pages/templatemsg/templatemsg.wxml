@@ -1,0 +1,28 @@
+<!-- 每个输入项都必须有name属性，从而Submit是可以获取到相应输入项的数值value -->
+
+<form report-submit bindsubmit='formSubmit'>
+  <label> - 课程名:
+    <input style='border:1px solid gray;margin:5px' type='text' name='name'></input>
+  </label>
+  <label> - 日期:
+    <picker mode='date' value='{{date}}' start='2018-01-01' end='2018-12-31' bindchange='bindDateChange' name='date'>
+      <view class='picker'>
+        当前选择: {{date}}
+      </view>
+    </picker>
+  </label>
+  <label> - 时间:
+    <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange" name='time'>
+    <view class="picker">
+      当前选择: {{time}}
+    </view>
+  </picker>
+  </label>
+    <label> - 地点:
+    <input style='border:1px solid gray;margin:5px' type='text' name='site'></input>
+  </label>
+    <label> - 座号:
+    <input style='border:1px solid gray;margin:5px' type='number' name='seat'></input>
+  </label>
+  <button type='primary' form-type='submit' style='margin-top:10px' >submit</button>
+</form>
