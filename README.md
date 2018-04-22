@@ -65,9 +65,14 @@ _              // header('content-type:text');//再添加这行
 > define a piece of codes by <<<END...END
 
 ```php
-
 $var<<<END
 ...
 END;
+//END: should be wroten at the very beginning of this row!!!!!
+
+$resultStr = httpGet($getTokenApi);
+//$resultStr = $this->httpGet($getTokenApi); 
+//"Using $this when not in object context" if not in a Class, do not use $this->
+
 
 ```
