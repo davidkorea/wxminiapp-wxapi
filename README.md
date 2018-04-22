@@ -60,3 +60,14 @@ _              // header('content-type:text');//再添加这行
 
 > Reference: [微信公众平台修改服务器配置时token验证失败](https://bbs.csdn.net/topics/390991193)
 
+# Issue 2 - template message
+
+> define a piece of codes by <<<END...END
+
+```php
+
+$var<<<END
+...
+END;
+
+```
